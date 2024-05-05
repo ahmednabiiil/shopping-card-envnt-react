@@ -1,17 +1,17 @@
 "use client";
+
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import {
-  BrowserRouter as Router,
   Route,
+  BrowserRouter as Router,
   Routes,
   useNavigate,
 } from "react-router-dom";
-import items from "./component/data";
-import CategoryFilter from "./component/CategoryFilter";
-import ItemList from "./component/ItemList";
-import "../src/styles/globals.scss";
-import SuccessPage from "./component/SuccessPage";
+import CategoryFilter from "./components/CategoryFilter";
+import ItemList from "./components/ItemList";
+import SuccessPage from "./components/SuccessPage";
+import items from "./components/data";
 
 const MainPage = () => {
   const [category, setCategory] = useState("All");
